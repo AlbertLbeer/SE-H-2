@@ -1,0 +1,62 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- 本地配置与密钥（提交前务必确认没有真实 Key） ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# ---------- 编辑器与操作系统文件 ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------- 日志与临时文件 ----------
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# ---------- 本项目的数据目录 ----------
+# 每次运行生成的产物（报告 / 日志 / 状态快照 / 代码版本），可随时重新生成
+runs/
+# 自己放入的待审查代码不随仓库分发，只保留占位文件
+review_files/*
+!review_files/.gitkeep
+# 临时分析脚本
+_scratch/
